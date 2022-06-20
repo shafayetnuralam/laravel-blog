@@ -9,7 +9,7 @@ class DemoController extends Controller
     
     function MyName($firstName,$middeName,$lastName){
 
-        return "First Name : " .$firstName . " Middle Name: ".$middeName . " Last Name: ".$lastName;
+        return view('DemoView',['firstName'=>$firstName,'middeName'=>$middeName,'lastName'=>$lastName]);
         
     }
 }
